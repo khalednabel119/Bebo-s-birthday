@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Bebo</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'IM Fell English SC', serif;
+      background: url('https://cdn.pixabay.com/photo/2017/06/20/18/31/egypt-2421723_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #3b2b1e;
+      text-align: center;
+    }
+
+    header {
+      background-color: rgba(255, 236, 179, 0.9);
+      padding: 60px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #8b4513;
+    }
+
+    .section {
+      background-color: rgba(255, 255, 240, 0.88);
+      padding: 40px 20px;
+      margin: 20px;
+      border-radius: 12px;
+      border: 6px double #d49872;
+      box-shadow: 0 0 15px rgba(212, 152, 114, 0.5);
+      position: relative;
+    }
+
+    .twist-btn {
+      background-color: #cfa76e;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .twist-btn:hover {
+      background-color: #a1693c;
+      transform: scale(1.05);
+      box-shadow: 0 0 12px #a1693c99;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scaleY(0.8);
+      background: url('/Beboo/WhatsApp Image 2025-07-28 at 10.58.36_fff1524f.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 40px;
+      border: 3px solid #a1693c;
+      border-radius: 14px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      max-width: 90%;
+      z-index: 9999;
+      animation: unroll 0.6s ease-out forwards;
+      transform-origin: top center;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #582c0c;
+    }
+
+    .popup p {
+      font-size: 1.2em;
+      line-height: 1.7;
+      color: #2e1c0c;
+    }
+
+    .close-btn {
+      background-color: #8b4513;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .close-btn:hover {
+      background-color: #5c3310;
+      transform: scale(1.05);
+    }
+
+    @keyframes unroll {
+      0% {
+        transform: translate(-50%, -50%) scaleY(0.1);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(-50%, -50%) scaleY(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎉 Happy Birthday Bebo! 🎂</h1>
+    <p>A gift for someone I love 🏺</p>
+  </header>
+
+  <div class="section">
+    <h2>To the dearest and closest</h2>
+    <p>
+      Like a precious relic found in golden sands,<br>
+      your presence lights every heart it touches.<br>
+      I wish you a year full of comfort first because it is what you want most and then success in what you want to achieve on the professional side or self-development or socially and always appreciate the presence of Khaled by your side in all circumstances and times I stand by you only because I love you so much and I will remain a happy year to my first sister, first brother and first friend
+    </p>
+    <button class="twist-btn" onclick="showMessage()">🔮 Tap the Relic for a Secret</button>
+  </div>
+
+  <div id="popup" class="popup">
+    <h2>📜 The Hidden Message</h2>
+    <p>
+      To the most unique soul I've known — Bebo,<br>
+      Your kindness is like the sun over the Nile,<br>
+      warming everything it touches 🌞<br><br>
+      Happy Birthday from the one who always believes in you — Khaled 💛
+    </p>
+    <button class="close-btn" onclick="hideMessage()">Close</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    function hideMessage() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
+
+
